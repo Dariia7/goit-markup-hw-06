@@ -21,12 +21,12 @@
     <title>Document</title>
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header hide">
       <div class="container header-deco">
         <nav class="navigation">
-          <a href="./index.html" class="logo link"
-            >Web<span class="studio-dark">Studio</span></a
-          >
+          <a href="./index.html" class="logo link">
+            Web<span class="studio-dark">Studio</span>
+          </a>
 
           <ul class="list list-deco">
             <li>
@@ -59,7 +59,7 @@
     <!--Main block-->
     <main>
       <!--Hero image/ Section 1-->
-      <section class="hero">
+      <section class="hero hide">
         <div class="container">
           <h1 class="hero-headline">Effective Solutions for Your Business</h1>
           <button type="button" class="button service-btn" data-modal-open>
@@ -69,7 +69,7 @@
       </section>
 
       <!--Section 2-->
-      <section class="section">
+      <section class="section hide">
         <div class="container">
           <h2 class="visually-hidden" hidden>Advantages</h2>
 
@@ -138,8 +138,8 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-name">Our Team</h2>
-          <ul class="list section-three-deco">
-            <li class="section-background">
+          <ul class="team-list">
+            <li class="team-card">
               <img
                 src="./images/img-mark.jpg"
                 alt="Mark Guerrero"
@@ -181,7 +181,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section-background">
+            <li class="team-card">
               <img
                 src="./images/img-tom.jpg"
                 alt="Tom Ford"
@@ -223,7 +223,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section-background">
+            <li class="team-card">
               <img
                 src="./images/img-camilaopt.jpg"
                 alt="Camila Garcia"
@@ -265,7 +265,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section-background">
+            <li class="team-card">
               <img
                 src="./images/img-danielopt.jpg"
                 alt="Daniel Wilson"
@@ -315,11 +315,15 @@
       <section class="section">
         <div class="container">
           <h2 class="section-name">Our Portfolio</h2>
-          <ul class="list list-port">
+          <ul class="list-port">
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/banking_app.jpg"
+                  srcset="
+                    ./images/portfolio/img-1.jpg    1x,
+                    ./images/portfolio/img-1@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-1.jpg"
                   alt="banking_app_picture"
                   width="360"
                 />
@@ -330,9 +334,7 @@
                 </p>
               </div>
               <div class="description-deco">
-                <h2 class="subtitle h2-deco-port">
-                  Banking App Interface Concept
-                </h2>
+                <h2 class="subtitle h2-deco-port">Banking App</h2>
                 <p class="description">App</p>
               </div>
             </li>
@@ -375,7 +377,11 @@
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/taxi_service.jpg"
+                  srcset="
+                    ./images/portfolio/img-4.jpg    1x,
+                    ./images/portfolio/img-4@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-4.jpg"
                   alt="auto_picture"
                   width="360"
                 />
@@ -430,8 +436,9 @@
         </div>
       </section>
     </main>
+
     <!--Footer  -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container network-footer">
         <div class="footer-deco">
           <a href="./index.html" class="logo link footer-link">
@@ -500,7 +507,7 @@
       </div>
     </footer>
     <!-- Modal window-->
-    <div class="backdrop">
+    <div class="backdrop hide">
       <div class="modal">
         <button
           class="modal-btn"
@@ -600,7 +607,7 @@
         </form>
       </div>
     </div>
-
-    <!--<script src="./js/modal.js"></script>-->
+    <!-- Mobile menu -->
+    <div class="menu-container"></div>
   </body>
 </html>
