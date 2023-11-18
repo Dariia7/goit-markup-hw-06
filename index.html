@@ -21,7 +21,7 @@
     <title>Document</title>
   </head>
   <body class="body">
-    <header class="header hide">
+    <header class="header">
       <div class="container header-deco">
         <nav class="navigation">
           <a href="./index.html" class="logo link">
@@ -33,13 +33,18 @@
               <a class="link-nav active link" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="link-nav link" href="./portfolio.html">Portfolio</a>
+              <a class="link-nav link" href="">Portfolio</a>
             </li>
             <li>
               <a class="link-nav link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button class="mobile-open-btn" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="main-address">
           <ul class="list address-deco">
             <li>
@@ -59,9 +64,12 @@
     <!--Main block-->
     <main>
       <!--Hero image/ Section 1-->
-      <section class="hero hide">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-headline">Effective Solutions for Your Business</h1>
+          <h1 class="hero-headline">
+            Effective Solutions<br />
+            for Your Business
+          </h1>
           <button type="button" class="button service-btn" data-modal-open>
             Order Service
           </button>
@@ -69,11 +77,11 @@
       </section>
 
       <!--Section 2-->
-      <section class="section hide">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden" hidden>Advantages</h2>
 
-          <ul class="list subtitle-deco">
+          <ul class="subtitle-deco">
             <li class="li-item">
               <div class="antenna">
                 <svg width="64" height="64">
@@ -341,7 +349,11 @@
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/cashless.jpg"
+                  srcset="
+                    ./images/portfolio/img-2.jpg    1x,
+                    ./images/portfolio/img-2@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-2.jpg"
                   alt="cash_picture"
                   width="360"
                 />
@@ -359,7 +371,11 @@
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/meditation.jpg"
+                  srcset="
+                    ./images/portfolio/img-3.jpg    1x,
+                    ./images/portfolio/img-3@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-3.jpg"
                   alt="laptop_picture"
                   width="360"
                 />
@@ -399,7 +415,11 @@
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/img5correction.jpg"
+                  srcset="
+                    ./images/portfolio/img-5.jpg    1x,
+                    ./images/portfolio/img-5@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-5.jpg"
                   alt="screen_illustration"
                   width="360"
                 />
@@ -417,7 +437,11 @@
             <li class="li-item-port">
               <div class="overlay">
                 <img
-                  src="./images/online_courses.jpg"
+                  srcset="
+                    ./images/portfolio/img-6.jpg    1x,
+                    ./images/portfolio/img-6@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img-6.jpg"
                   alt="girl_picture"
                   width="360"
                 />
@@ -438,9 +462,9 @@
     </main>
 
     <!--Footer  -->
-    <footer class="footer hide">
+    <footer class="footer">
       <div class="container network-footer">
-        <div class="footer-deco">
+        <div class="footer-deco mobile-footer">
           <a href="./index.html" class="logo link footer-link">
             Web<span class="studio-light">Studio</span>
           </a>
@@ -450,7 +474,7 @@
           </p>
         </div>
 
-        <div class="network-footer-second">
+        <div class="network-footer-second mobile-footer">
           <p class="social-media">Social media</p>
 
           <ul class="network-deco footer-network">
@@ -484,7 +508,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-block">
+        <div class="subscribe-block mobile-footer">
           <p class="subscribe-caption">Subscribe</p>
           <form class="email-field" name="subcribe-form">
             <label for="subscribe-email" class="subscribe-label">
@@ -519,7 +543,10 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <p class="modal-title">
+          Leave your contacts and we will <br class="space" />
+          call you back
+        </p>
         <form class="modal-form" name="contacts-form" autocomplete="off">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
@@ -608,6 +635,74 @@
       </div>
     </div>
     <!-- Mobile menu -->
-    <div class="menu-container"></div>
+    <div class="menu-container">
+      <div class="container">
+        <button class="modal-btn mobile-menu-btn" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation">
+          <li class="navigation-list">
+            <h2 class="navigation-item blue-color">Studio</h2>
+          </li>
+          <li class="navigation-list">
+            <h2 class="navigation-item">Portfolio</h2>
+          </li>
+          <li class="navigation-list">
+            <h2 class="navigation-item">Contacts</h2>
+          </li>
+        </ul>
+
+        <address class="mobile-menu-address">
+          <ul class="address-list">
+            <li class="address-list-item">
+              <a
+                href="tel:+110001111111"
+                class="address-list-link link blue-color"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="address-list-item">
+              <a href="mailto:info@devstudio.com" class="address-list-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-network-deco">
+          <li class="icons-deco">
+            <a class="icons" href="">
+              <svg width="24" height="24" class="icon-fill">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-deco">
+            <a class="icons" href="">
+              <svg width="24" height="24" class="icon-fill">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-deco">
+            <a class="icons" href="">
+              <svg width="24" height="24" class="icon-fill">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-deco">
+            <a class="icons" href="">
+              <svg width="24" height="24" class="icon-fill">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
