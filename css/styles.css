@@ -131,7 +131,7 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* Mobile screen */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .main-address {
     display: none;
   }
@@ -277,7 +277,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image.jpg);
+    url(../images/hero-image-mob.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,7 +292,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image@2x.jpg);
+      url(../images/hero-image-mob@2x.jpg);
   }
 }
 
@@ -328,6 +328,53 @@ button {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image-tablet.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image-tablet@2x.jpg);
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image@2x.jpg);
   }
 }
 
@@ -626,7 +673,7 @@ FOOTER STYLES
   align-items: baseline;
 }
 /*Mobile desktop*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .network-footer {
     display: flex;
     flex-wrap: wrap;
@@ -672,12 +719,13 @@ FOOTER STYLES
 }
 
 /*Tablet desktop*/
-@media only screen and (max-width: 1158px) {
+@media only screen and (min-width: 768px) {
   .network-footer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+    margin-left: 108px;
   }
   .subscribe-label {
   }
@@ -688,9 +736,9 @@ FOOTER STYLES
 
 /*Laptop desktop*/
 @media only screen and (min-width: 1158px) {
-  .footer-deco {
+  /* .footer-deco {
     margin-right: 120px;
-  }
+  } */
   .network-footer-second {
     margin-right: 80px;
   }
